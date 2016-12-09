@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="maquetación editorial">
+  <meta name="keywords" content="diseño web">
+  <meta name="description" content="diseño editorial, gráfico y web">
+  <meta name="description" content="maquetacion editorial y desarrollo web">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <title>Contacto</title>
+</head>
+<div class="wrapper">
+  <body>
+    <header class="header"> 
+      <span class="header-span1"><img class="header-img1" src="image/fig/circulo.png"></span>
+      <span class="header-span1"><img class="header-img1" src="image/fig/circulo.png"></span>     
+      <span class="header-span2">
+        <img class="header-img2" src="image/fig/redondo-negro.png">
+        <img class="header-img2" src="image/fig/cuadro-negro.png">
+        <img class="header-img2" src="image/fig/redondo-negro.png">
+      </span>
+      <nav class="header-menu">
+        <ul class="header-list">
+          <li><a class="header-list-link" id="op1" href="home.html">INICIO</a></li>
+          <li><a class="header-list-link" id="op2" href="proyectos.html">PROYECTOS</a></li>
+          <li><a class="header-list-link" id="op3" href="servicios.html">SERVICIOS</a></li>
+          <li><a class="header-list-link" id="op4" href="contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>     
+    </header>
+
+    <section class="section">
+      <article class="section-article">
+      <div class="container-contacto">
+        <p>Si lo desea puede contactar con nosotros para cualquier consulta o aclaración a través del teléfono o por correo electrónico.</p>
+        <p class="telefono"><a href="tel:+31660520932"><strong>660 52 09 32</strong></a> - <a href="+31619851144"><strong>619 85 11 44</strong></a></p>
+        <p><a href="mailto:lamaquetadora@gmail.com">lamaquetadora@gmail.com</a></p>
+        <p><a href="mailto:luzupita@gmail.com">luzupita@gmail.com</a></p><br>
+        
+          <form action="//formspree.io/lamaquetadora@gmail.com" method="post"  name="contacto" id="contactform" title="Formulario de contacto">
+            <p><input class="form-items" name="nombre" type="text" size="70%" required id="nombre" placeholder="Nombre*" tabindex="1" title="nombre"></p>
+            <p><input class="form-items" name="_replayto" type="email" size="70%" required id="email" placeholder="Email*" tabindex="2" title="email"></p>
+            <p><textarea class="form-items" name="mensaje" cols="70" rows="4" required id="mensaje" placeholder="Mensaje*" tabindex="3" title="mensaje"></textarea></p>
+            <input type="hidden" name="_subject" value="Website contact" />
+            <input type="text" name="_gotcha" style="display:none" />
+             <br>
+              <input name="submit" type="submit" id="submit" tabindex="5" value="Enviar">          
+          </form>
+            <script>
+              var contactform = document.getElementById('contactform');
+              contactform.setAttribute('action', '//formspree.io/' + 'lamaquetadora' + '@' + 'gmail' + '.' + 'com');
+            </script>
+      </div>
+      </article> 
+    </section>
+
+    <footer class="footer">
+      
+        <span class="footer-span1">
+          <img class="footer-img" src="image/fig/cuadro-negro.png">
+          <img class="footer-img" src="image/fig/redondo-negro.png">
+          <img class="footer-img" src="image/fig/cuadro-negro.png">
+        </span>
+        
+        <figure class="footer-figure">
+          <a href="index.html"><img src="image/onlogo2.gif" alt=""/></a>
+        </figure>
+
+        <span class="footer-span2">
+          <img class="footer-img" src="image/fig/redondo-negro.png">
+          <img class="footer-img" src="image/fig/cuadro-verde.png">
+          <img class="footer-img" src="image/fig/redondo-negro.png">
+        </span>
+
+    </footer>
+
+    <script type="text/javascript">
+      window.onload = function() {
+        document.getElementById("op4").style.color="orange";
+      }
+    </script>
+
+  </body>
+
+</div>
+</html>

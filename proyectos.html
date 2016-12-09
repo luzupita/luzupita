@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="maquetación editorial">
+  <meta name="keywords" content="diseño web">
+  <meta name="description" content="diseño editorial, gráfico y web">
+  <meta name="description" content="maquetacion editorial y desarrollo web">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <title>Proyectos</title>
+</head>
+<div class="wrapper">
+  <body>
+    <header class="header"> 
+      <span class="header-span1"><img class="header-img1" src="image/fig/circulo.png"></span>
+      <span class="header-span1"><img class="header-img1" src="image/fig/cuadrado.png"></span>     
+      <span class="header-span2">
+        <img class="header-img2" src="image/fig/cuadro-negro.png">
+        <img class="header-img2" src="image/fig/cuadro-verde.png">
+        <img class="header-img2" src="image/fig/cuadro-negro.png">
+      </span>
+      <nav class="header-menu">
+        <ul class="header-list">
+          <li><a class="header-list-link" id="op1" href="home.html">INICIO</a></li>
+          <li><a class="header-list-link" id="op2" href="proyectos.html">PROYECTOS</a></li>
+          <li><a class="header-list-link" id="op3" href="servicios.html">SERVICIOS</a></li>
+          <li><a class="header-list-link" id="op4" href="contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section">
+      <article class="section-article">
+        <ul class="section-articule-ul">
+                
+          <li class="section-articule-li" id="li" onclick="javascript: cambio(this);">
+           <a class="enlace" href="proyects/imagen1.html" target="_blank">
+            <figure class="figure" id="proyect1" onclick="javascript: cambio1(this);"></figure>
+             <p>Libros de texto</p>
+           </a>                  
+          </li>
+          
+          <li class="section-articule-li" onclick="javascript: cambio(this);">
+           <a class="enlace" href="http://www.restaurantepalomeque.com" target="_blank">
+            <figure class="figure figure-redondo" id="proyect2" onclick="javascript: cambio1(this);"></figure>
+             <p>Diseño Web</p>
+           </a>
+          </li>               
+        
+          <li class="section-articule-li" onclick="javascript: cambio(this);">
+           <a class="enlace" href="proyects/imagen3.html" target="_blank">
+            <figure class="figure" id="proyect3" onclick="javascript: cambio1(this);"></figure>
+             <p>Folletos</p>
+            </a>
+          </li>
+          
+          <li class="section-articule-li" onclick="javascript: cambio(this);">
+           <a class="enlace" href="proyects/imagen4.html" target="_blank">
+            <figure class="figure" id="proyect4" onclick="javascript: cambio1(this);"></figure>
+             <p>Catalogos Industriales</p>
+           </a>
+          </li>
+
+          <li class="section-articule-li" onclick="javascript: cambio(this);">
+           <a class="enlace" href="proyects/imagen5.html" target="_blank">
+            <figure class="figure" id="proyect5" onclick="javascript: cambio1(this);"></figure>
+             <p>Libros de lectura</p>
+           </a>
+          </li>
+
+          <li class="section-articule-li" onclick="javascript: cambio(this);">
+           <a class="enlace" href="proyects/imagen6.html" target="_blank">
+            <figure class="figure" id="proyect6" onclick="javascript: cambio1(this);"></figure>
+             <p>Dípticos</p>
+           </a>
+          </li>
+
+          <li class="section-articule-li" onclick="javascript: cambio(this);">
+           <a  class="enlace" href="http://www.lacasitadelpaciente.com" target="_blank">
+            <figure class="figure figure-redondo" id="proyect7" onclick="javascript: cambio1(this);"></figure>
+             <p>Web</p>
+           </a>
+          </li>
+
+          <li class="section-articule-li" onclick="javascript: cambio(this);">
+           <a class="enlace" href="proyects/imagen8.html" target="_blank">
+            <figure class="figure" id="proyect8" onclick="javascript: cambio1(this);"></figure>
+             <p>Anuncios impresos</p>
+           </a>
+          </li>
+
+        </ul>     
+      </article>
+    </section>
+
+    <footer class="footer">     
+        <span class="footer-span1">
+          <img class="footer-img" src="image/fig/redondo-negro.png">
+          <img class="footer-img" src="image/fig/cuadro-negro.png">
+          <img class="footer-img" src="image/fig/redondo-negro.png">
+        </span>
+        
+        <figure class="footer-figure">
+          <a href="index.html"><img src="image/onlogo2.gif" alt=""/></a>
+        </figure>
+
+        <span class="footer-span2">
+          <img class="footer-img" src="image/fig/redondo-negro.png">
+          <img class="footer-img" src="image/fig/cuadro-negro.png">
+          <img class="footer-img" src="image/fig/cuadro-negro.png">
+        </span>
+    </footer>
+
+    <script type="text/javascript">
+      window.onload = function() {
+        document.getElementById("op2").style.color="orange";
+      }
+    </script>
+
+    <script type="text/javascript"> 
+
+      function cambio(el){ 
+           
+          if (el.style.background==!"white") {
+            el.style.background="rgba(255, 165, 0, 0.2)";
+          }
+           else {
+            el.style.background="rgba(131, 187, 38, 0.2)";
+           }     
+      }
+
+    </script>
+
+   <script type="text/javascript"> 
+
+      function cambio1(ele){
+
+          if (ele.style.border==!"1px solid white") {       
+            ele.style.border="1px solid rgba(131, 187, 38, 0.1)";
+          }
+          else {
+            ele.style.border="1px solid white";
+          } 
+      }
+
+    </script>
+
+  </body>
+</div>
+</html>
